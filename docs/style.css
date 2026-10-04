@@ -17,8 +17,8 @@ body {
 
     display: flex;
     align-items: center;
-
-    padding: 10px 50px 0px 50px;
+	margin: 0px 5px;
+	padding: clamp(5px, 1vw, 25px);
 }
 .nav-left {
 	flex: 1;
@@ -28,9 +28,11 @@ body {
 }
 .nav-left p {
 	font-variant: small-caps;
-	font-size: 30px;
+	font-size: clamp(5px, 2.5vw, 30px)
 }
 .nav-center {
+	flex: 0 1 auto;
+	min-width: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,36 +44,21 @@ body {
     justify-content: flex-end;
     align-items: center;
 }
-ul {
-	display: flex;
-	align-items: top;
-	justify-content: center;
-	list-style-type: none;
-	margin: 0px;
-	padding: 0px 0px;
-	background-color: rgba(122,122,122,1.00);
-}
-li{
-	display: inline-block;
-	text-align: center;
-	margin: 0px;
-	padding: 0px 5px;
-	width: 100%;
-}
 .clickable-block {
-	margin: 0px 5px;
-	padding: 10px 25px;
-	font-size: clamp(5px, 2.5vw, 10px);
+	margin: 0 clamp(1px, 0.5vw, 5px);
+	padding: 0 clamp(2px, .8vw, 25px);
 	align-content: center;
 }
 .clickable-block-selected {
-	margin: 0px 5px;
-	padding: 10px 25px;
+	margin: 0 clamp(1px, 0.5vw, 5px);
+	padding: 0 clamp(0px, .8vw, 25px);
 	border-bottom: solid;
 	border-width: 1px;
 	border-bottom-width: 3px;
-	font-size: clamp(5px, 2.5vw, 15px);
 	align-content: center;
+}
+.clickable-block h1, .clickable-block-selected h1 {
+	font-size: clamp(4px, 2.5vw, 25px);
 }
 .footer {
 	display: flex;
