@@ -28,7 +28,7 @@ body {
 }
 .nav-left p {
 	font-variant: small-caps;
-	font-size: clamp(5px, 2.5vw, 30px)
+	font-size: clamp(5px, 2.5vw, 30px);
 }
 .nav-center {
 	flex: 0 1 auto;
@@ -37,7 +37,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 .nav-right {
 	flex: 1;
     display: flex;
