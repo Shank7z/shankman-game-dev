@@ -1,28 +1,54 @@
 body {
 	margin: 0;
-  	background-color: rgba(100,100,100,1.00);
+  	background-color: white;
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	justify-content: center;
 }
 
 
 
 /* Navigation */
-
 .nav-bar {
-	background-color: rgba(192,192,192,1.00);
-	position: fixed;
-	width: 100%;
-	display: flex;
-	justify-items: center;
-	align-items: center;
-	padding: 5px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+
+    padding: 10px 50px 0px 50px;
+}
+.nav-left {
+	flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.nav-left p {
+	font-variant: small-caps;
+	font-size: 30px;
+}
+.nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-right {
+	flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 ul {
 	display: flex;
 	align-items: top;
 	justify-content: center;
 	list-style-type: none;
-	margin: 0;
-	padding: 0px 30px;
+	margin: 0px;
+	padding: 0px 0px;
 	background-color: rgba(122,122,122,1.00);
 }
 li{
@@ -34,25 +60,32 @@ li{
 }
 .clickable-block {
 	margin: 0px 0px;
-	background-color: rgba(164,164,164,1.00);
-	border-radius: 5px;
-	font-size: clamp(5px, 2.5vw, 25px);
+	padding: 10px 20px;
+	font-size: clamp(5px, 2.5vw, 10px);
+	align-content: center;
+}
+.clickable-block-selected {
+	margin: 0px 0px;
+	padding: 10px;
+	border-bottom: solid;
+	border-width: 1px;
+	border-bottom-width: 3px;
+	font-size: clamp(5px, 2.5vw, 15px);
+	align-content: center;
 }
 .footer {
 	display: flex;
 	align-content: bottom;
 	align-items: center;
 	justify-content: center;
-	min-height: 100px;
+	min-height: 250px;
 	background-color: rgba(192,192,192,1.00);
 }
-
 /* End Navigation */
 
 
 
 /* Links */
-
 a:link {
 	font-size: 40px;
 	color: rgba(25,25,25,1);
@@ -66,22 +99,25 @@ a:visited {
 a:hover {
 	font-size: 40px;
 	color: rgba(25,25,25,1);
-	text-decoration: none;
+	text-decoration: underline;
 }
 a:active {
 	font-size: 40px;
 	color: rgba(25,25,25,1);
-	text-decoration: none;
+	text-decoration: underline;
 }
-
 /* End Links */
 
 
 
 /* General */
-
 .content {
-	min-height: 2000px;
+	min-height: 1000px;
+	border: solid;
+	border-width: 1px;
+	border-right: none;
+	border-left: none;
+	border-color: black;
 }
 div {
 	margin: 0px;
