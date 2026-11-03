@@ -53,13 +53,13 @@ const projects = {
 
         title: "Portfolio Website",
 
-        description: "This site itself",
+        description: "",
 
         image: "assets/images/Dreamweaver.png",
 
         content: `
             <h2>Overview</h2>
-            <p>I programmed this whole site from scratch in Dreamweaver using HTML, CSS, and JavaScript. The site is deployed through Github Pages.</p>
+            <p>I programmed this whole website from scratch in Dreamweaver using HTML, CSS, and JavaScript. The site is deployed through GitHub Pages.</p>
 
             <h2>Takeaways</h2>
             <p>

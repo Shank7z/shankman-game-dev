@@ -38,14 +38,13 @@ function setUpNavBar()
     '<div class="nav-bar">' +
 
         '<div class="nav-left">' +
-            '<p>Shankman Game Dev</p>' +
+            '<a href="' + ROOT + 'projects.html"><div class="' + homeClass + '"><p>Shankman Game Dev</p></div></a>' +
         '</div>' +
 
         '<div class="nav-center">' +
-            '<a href="' + ROOT + 'index.html"><div class="' + homeClass + '"><h1>Home</h1></div></a>' +
             '<a href="' + ROOT + 'projects.html"><div class="' + projectsClass + '"><h1>Projects</h1></div></a>' +
+		    '<a href="' + ROOT + 'about.html"><div class="' + aboutClass + '"><h1>About</h1></div></a>' +
             '<a href="' + ROOT + 'extras.html"><div class="' + extrasClass + '"><h1>Extras</h1></div></a>' +
-            '<a href="' + ROOT + 'about.html"><div class="' + aboutClass + '"><h1>About</h1></div></a>' +
             '<a href="' + ROOT + 'contact.html"><div class="' + contactClass + '"><h1>Contact</h1></div></a>' +
         '</div>' +
 

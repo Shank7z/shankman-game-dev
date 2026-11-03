@@ -97,6 +97,7 @@ a:active {
 
 /* General */
 .content {
+	padding: 0 100px;
 	min-height: 1000px;
 	border: solid;
 	border-width: 1px;
@@ -117,7 +118,7 @@ p {
   	color: rgba(0,0,0,1);
 	margin: 0px;
 	padding: 0px;
-	font-size: 30px
+	font-size: 20px
 }
 /* End General */
 
@@ -176,10 +177,14 @@ p {
 /* Project information */
 
 .project-info {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
     padding: 15px;
 }
 
 .project-info h2 {
+	font-size: 40px;
     margin: 0 0 8px;
 }
 
@@ -190,6 +195,7 @@ p {
 .project-info span {
     font-size: 0.85rem;
     opacity: 0.7;
+	margin-top: auto;
 }
 
 
@@ -219,6 +225,10 @@ p {
 
 .project-details h1 {
 	font-size: 50px;
+}
+
+.aboutBlock {
+	padding: 20px 0;
 }
 
 /* Responsive layout */
