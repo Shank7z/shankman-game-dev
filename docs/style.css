@@ -6,7 +6,6 @@ body {
 }
 
 
-
 /* Navigation */
 .nav-bar {
     background-color: white;
@@ -117,5 +116,96 @@ h1 {
 p {
   	color: rgba(0,0,0,1);
 	margin: 0px;
-	padding: 0px
+	padding: 0px;
+	font-size: 30px
+}
+/* End General */
+
+
+
+/* Portfolio page */
+
+.portfolio-container {
+    width: 85%;
+    max-width: 1400px;
+    margin: 60px auto;
+}
+
+.portfolio-container h1 {
+    margin-bottom: 35px;
+}
+
+/* Project grid */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Individual project cards */
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+
+    text-decoration: none;
+    color: inherit;
+
+    overflow: hidden;
+    border-radius: 8px;
+	
+	background-color: lightgrey;
+
+    transition: transform 0.25s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Project thumbnail */
+
+.project-card img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+}
+
+/* Project information */
+
+.project-info {
+    padding: 15px;
+}
+
+.project-info h2 {
+    margin: 0 0 8px;
+}
+
+.project-info p {
+    margin: 0 0 12px;
+}
+
+.project-info span {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+/* Responsive layout */
+
+@media (max-width: 900px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .project-grid {
+		grid-template-columns: 1fr;
+    }
+
+    .portfolio-container {
+        width: 92%;
+    }
 }
