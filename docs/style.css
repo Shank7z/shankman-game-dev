@@ -197,7 +197,28 @@ p {
 
 /* Project Details Page */
 .project-details {
-	margin: 0 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align: center;
+	margin: 0 200px;
+}
+
+.project-details img {
+	width: 70%;
+	align: center;
+	justify-content: center;
+    object-fit: cover;
+    display: block;
+}
+
+.project-details p {
+	font-size: 20px;
+}
+
+.project-details h1 {
+	font-size: 50px;
 }
 
 /* Responsive layout */

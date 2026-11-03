@@ -1,6 +1,16 @@
-	const ROOT = "";
+	const ROOT = "/shankman-game-dev/";
 document.addEventListener("DOMContentLoaded", function () {
-    var currentPage = window.location.pathname.split("/").pop();
+    
+	setUpNavBar();
+	setUpFooter();
+	updateProjectDates();
+	sortProjects("newest")
+});
+
+// Sets up the nav bar with its hrefs and innerHTML
+function setUpNavBar()
+{
+	var currentPage = window.location.pathname.split("/").pop();
 
     var homeClass = "clickable-block";
     var projectsClass = "clickable-block";
@@ -43,22 +53,19 @@ document.addEventListener("DOMContentLoaded", function () {
         '</div>' +
 
     '</div>';
+}
 
-	// Sorts the individual project cards on the Projects page
-	updateProjectDates();
-	const projectGrid = document.getElementById("projectGrid");
-
-	if (projectGrid) 
-	{
-    	sortProjects("newest");
-	}
-	
-
-});
+// Sets up footer (currently doesnt really have anything)
+function setUpFooter()
+{
+		document.getElementById("footer").innerHTML = 
+		 '<p>Shankman Game Dev</p>'
+}
 
 // Finds the grid, grabs each project, sorts them by date, and then re-adds them to grid
 function sortProjects(order = "newest") {
-
+	const projectGrid = document.getElementById("projectGrid");
+	if(!projectGrid) return;
     const grid = document.getElementById("projectGrid");
     const projects = Array.from(grid.children);
 
@@ -82,6 +89,7 @@ function sortProjects(order = "newest") {
 
 }
 
+// Updates the date text for each project based on it's data-date
 function updateProjectDates() {
 
     const projects = document.querySelectorAll(".project-card");

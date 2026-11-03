@@ -1,20 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    // Get project ID from URL
     const params = new URLSearchParams(window.location.search);
 
     const projectID = params.get("project");
 
-    // Find corresponding project
     const project = projects[projectID];
 
-    // Check if project exists
+    // Makes sure project exists
     if (!project) {
         document.getElementById("projectTitle").textContent = "Project Not Found";
         return;
     }
 
-    // Populate HTML
     document.getElementById("projectTitle").textContent = project.title;
 
     document.getElementById("projectDescription").textContent = project.description;
@@ -33,39 +30,42 @@ const projects = {
 
     "temp": {
 
-        title: "Temp Title",
+        title: "Incomplete Page",
 
-        description: "Environment made exclusively with self-made models",
+        description: "This project's page has not been set up yet",
 
         image: "assets/images/temp.png",
 
         content: `
             <h2>Overview</h2>
-            <p>This is where the project overview goes.</p>
+            <p>This is where the project overview will go.</p>
 
             <h2>Development</h2>
-            <p>This is where the development process goes.</p>
+            <p>This is where the development process will go.</p>
 
-            <h2>What I Learned</h2>
-            <p>This is where you discuss what you learned.</p>
+            <h2>Takeaways</h2>
+            <p>This is where skills learned and used will go.</p>
         `
 
     },
 
-    "bleak-reactor": {
+    "portfolio-site": {
 
-        title: "Bleak Reactor",
+        title: "Portfolio Website",
 
-        description: "Third person weapon-focused roguelike",
+        description: "This site itself",
 
-        image: "assets/images/temp.png",
+        image: "assets/images/Dreamweaver.png",
 
         content: `
             <h2>Overview</h2>
-            <p>Bleak Reactor project overview.</p>
+            <p>I programmed this whole site from scratch in Dreamweaver using HTML, CSS, and JavaScript. The site is deployed through Github Pages.</p>
 
-            <h2>Gameplay Systems</h2>
-            <p>Discuss the gameplay systems here.</p>
+            <h2>Takeaways</h2>
+            <p>
+				Making this site helped me learn a ton about web design. Not only did I have to learn how to program in HTML/CSS/JS, but I also had to do a ton of research into
+				what makes a website feel modern and stylish.
+			</p>
         `
 
     }
