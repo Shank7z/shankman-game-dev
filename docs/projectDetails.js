@@ -37,7 +37,7 @@ const projects = {
 
         description: "Environment made exclusively with self-made models",
 
-        image: "../assets/images/temp.png",
+        image: "assets/images/temp.png",
 
         content: `
             <h2>Overview</h2>
@@ -58,7 +58,7 @@ const projects = {
 
         description: "Third person weapon-focused roguelike",
 
-        image: "../assets/images/temp.png",
+        image: "assets/images/temp.png",
 
         content: `
             <h2>Overview</h2>
