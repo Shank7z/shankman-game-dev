@@ -192,6 +192,14 @@ p {
     opacity: 0.7;
 }
 
+
+
+
+/* Project Details Page */
+.project-details {
+	margin: 0 20px;
+}
+
 /* Responsive layout */
 
 @media (max-width: 900px) {
