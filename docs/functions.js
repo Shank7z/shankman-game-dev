@@ -1,6 +1,5 @@
+	const ROOT = "";
 document.addEventListener("DOMContentLoaded", function () {
-
-	const ROOT = "/shankman-game-dev/";
     var currentPage = window.location.pathname.split("/").pop();
 
     var homeClass = "clickable-block";
